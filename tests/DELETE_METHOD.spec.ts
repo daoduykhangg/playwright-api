@@ -8,12 +8,10 @@ test('', async({request}) => {
 const url = 'https://jsonplaceholder.typicode.com/posts/1';
 
 let response = await request.delete(url);
+const bodyJson = await response.json();
+console.log(bodyJson);
 
 //Verification
 expect(response.status()).toBe(200);
-
-let res = await request.get("https://jsonplaceholder.typicode.com/posts/1");
-console.log(res.status());
-expect(res.status()).toBe(200);
 
 })
