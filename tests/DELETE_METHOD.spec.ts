@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test('', async({request}) => {
+test('Should be able to send a delete request', async({request}) => {
 // Construct data
 
 
