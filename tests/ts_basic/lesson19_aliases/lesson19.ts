@@ -9,4 +9,4 @@ function addNumberOrStringg (a: binType, b: binType) {
   throw new Error('Parameters must be numbers or strings');
 }
 
-console.log(">>>> check: ", addNumberOrString("Khang"," Dao"));
+console.log(">>>> check: ", addNumberOrStringg("Khang"," Dao"));
